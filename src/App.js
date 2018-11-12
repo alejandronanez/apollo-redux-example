@@ -1,26 +1,30 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component, Fragment } from 'react';
 import './App.css';
+import CenterPanel from 'CenterPanel';
+import LeftPanel from 'LeftPanel';
+import RightPanel from 'RightPanel';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Fragment>
+        <div className="Container">
+          <LeftPanel />
+          <CenterPanel />
+          <RightPanel />
+        </div>
+        <div className="Controls">
+          <button className="Button" onClick={this.handleSumClick}>
+            +
+          </button>
+          <button className="Button" onClick={this.handleSubtractClick}>
+            -
+          </button>
+          <button className="Button" onClick={this.handleGetDataClick}>
+            Get data from source
+          </button>
+        </div>
+      </Fragment>
     );
   }
 }
