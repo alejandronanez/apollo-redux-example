@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { updateFirstName, updateLastName } from './store';
+import { updateFirstName, updateLastName } from './actions';
 
 class Names extends React.Component {
   state = {

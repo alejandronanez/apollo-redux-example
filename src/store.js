@@ -1,4 +1,12 @@
 import { createStore } from 'redux';
+import {
+  INCREMENT,
+  DECREMENT,
+  FETCH_DATA,
+  UPDATE_FIRST_NAME,
+  UPDATE_AGE,
+  UPDATE_LAST_NAME,
+} from './actions';
 
 const initialState = {
   counter: 0,
@@ -13,20 +21,6 @@ const initialState = {
   },
   data: [],
 };
-
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
-export const FETCH_DATA = 'FETCH_DATA';
-export const UPDATE_FIRST_NAME = 'UPDATE_FIRST_NAME';
-export const UPDATE_LAST_NAME = 'UPDATE_LAST_NAME';
-export const UPDATE_AGE = 'UPDATE_AGE';
-
-// Action creators
-export const updateFirstName = payload => ({
-  type: UPDATE_FIRST_NAME,
-  payload,
-});
-export const updateLastName = payload => ({ type: UPDATE_LAST_NAME, payload });
 
 // Reducer
 function reducer(state = initialState, action) {

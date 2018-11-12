@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { INCREMENT, DECREMENT, FETCH_DATA } from './store';
+import { INCREMENT, DECREMENT, FETCH_DATA } from './actions';
 
 const Controls = props => {
   console.log('Props: ', props);
