@@ -12,10 +12,11 @@ export const FETCH_DATA = 'FETCH_DATA';
 function reducer(state = initialState, action) {
   switch (action.type) {
     case INCREMENT:
-      return state.sum + 1;
+      return { ...state, sum: state.sum + 1 };
     case DECREMENT:
-      return state.sum - 1;
+      return { ...state, sum: state.sum - 1 };
     case FETCH_DATA:
+      console.log(`${FETCH_DATA}: Fetching data...`);
       return state;
     default:
       return state;
