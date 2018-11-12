@@ -29,3 +29,19 @@
 .Counter {
   padding: 15px;
 }
+
+.Names {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.Names input[type='text'] {
+  margin-bottom: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.Names .Button {
+  margin: 0;
+}
