@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
-import CenterPanel from 'CenterPanel';
-import LeftPanel from 'LeftPanel';
-import RightPanel from 'RightPanel';
+import CenterPanel from './CenterPanel';
+import LeftPanel from './LeftPanel';
+import RightPanel from './RightPanel';
+import Counter from './Counter';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <CenterPanel />
           <RightPanel />
         </div>
+        <Counter />
         <div className="Controls">
           <button className="Button" onClick={this.handleSumClick}>
             +
@@ -20,8 +22,11 @@ class App extends Component {
           <button className="Button" onClick={this.handleSubtractClick}>
             -
           </button>
-          <button className="Button" onClick={this.handleGetDataClick}>
-            Get data from source
+          <button className="Button" onClick={this.handleGetDataThunkClick}>
+            Get data from source using Thunks
+          </button>
+          <button className="Button" onClick={this.handleGetDataApolloClick}>
+            Get data from source using Apollo
           </button>
         </div>
       </Fragment>
