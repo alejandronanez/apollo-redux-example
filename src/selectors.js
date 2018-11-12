@@ -4,6 +4,7 @@ import { createSelector } from 'reselect';
 // Non Memoized selectors
 export const getFirstNameNM = state =>
   get(state, ['persona', 'data', 'name', 'firstName']);
+
 export const getLastNameNM = state =>
   get(state, ['persona', 'data', 'name', 'lastName']);
 

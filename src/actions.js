@@ -11,3 +11,4 @@ export const updateFirstName = payload => ({
   payload,
 });
 export const updateLastName = payload => ({ type: UPDATE_LAST_NAME, payload });
+export const updateAge = payload => ({ type: UPDATE_AGE, payload });

@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
 import CenterPanel from './CenterPanel';
-import LeftPanel from './LeftPanel';
+import LeftPanel from './LeftPanel/index';
 import RightPanel from './RightPanel';
 import Counter from './Counter';
 import Controls from './Controls';

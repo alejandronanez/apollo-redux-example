@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-.Container div {
+.Container > div {
   border: 1px solid #c3c3c3;
   height: 70vh;
   width: 30%;
